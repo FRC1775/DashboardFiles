@@ -1,67 +1,8 @@
 {
-  "dividerPosition": 0.22692793931731986,
+  "dividerPosition": 0.12705436156763592,
   "tabPane": [
     {
-      "title": "SmartDashboard",
-      "autoPopulate": true,
-      "autoPopulatePrefix": "SmartDashboard/",
-      "widgetPane": {
-        "gridSize": 128.0,
-        "showGrid": true,
-        "hgap": 16.0,
-        "vgap": 16.0,
-        "tiles": {
-          "0,0": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "ComboBox Chooser",
-              "_source0": "network_table:///SmartDashboard/Auto mode",
-              "_title": "Auto mode"
-            }
-          },
-          "1,0": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Boolean Box",
-              "_source0": "network_table:///SmartDashboard/MotorSubsystem/resetGyro",
-              "_title": "MotorSubsystem/resetGyro",
-              "colorWhenTrue": "#7CFC00FF",
-              "colorWhenFalse": "#8B0000FF"
-            }
-          },
-          "2,0": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///SmartDashboard/MotorSubsystem/navx/angle",
-              "_title": "MotorSubsystem/navx/angle"
-            }
-          },
-          "3,0": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///SmartDashboard/Angle",
-              "_title": "Angle"
-            }
-          }
-        }
-      }
-    },
-    {
-      "title": "LiveWindow",
+      "title": "Competition Dashboard",
       "autoPopulate": false,
       "autoPopulatePrefix": "LiveWindow/",
       "widgetPane": {
@@ -70,49 +11,48 @@
         "hgap": 16.0,
         "vgap": 16.0,
         "tiles": {
-          "0,0": {
+          "4,1": {
             "size": [
               2,
-              2
-            ],
-            "content": {
-              "_type": "PID Controller",
-              "_source0": "network_table:///LiveWindow/MotorSubsystem/PIDController[2]",
-              "_title": "Rotate PID"
-            }
-          },
-          "0,2": {
-            "size": [
-              1,
               1
             ],
             "content": {
-              "_type": "Toggle Button",
-              "_source0": "network_table:///LiveWindow/MotorSubsystem/resetGyro",
-              "_title": "Reset Gyro"
+              "_type": "ComboBox Chooser",
+              "_source0": "network_table:///SmartDashboard/Auto mode",
+              "_title": "Auto Mode"
             }
           },
-          "1,2": {
+          "2,1": {
             "size": [
-              1,
+              2,
               1
             ],
             "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///LiveWindow/MotorSubsystem/navx/angle",
-              "_title": "Angle"
+              "_type": "ComboBox Chooser",
+              "_source0": "network_table:///SmartDashboard/Robot starting position",
+              "_title": "Robot Starting Position"
             }
           },
           "2,0": {
             "size": [
-              6,
-              2
+              4,
+              1
             ],
             "content": {
-              "_type": "Graph",
-              "_source0": "network_table:///LiveWindow/MotorSubsystem/navx/angle",
-              "_title": "LiveWindow/MotorSubsystem/navx/angle",
-              "Visible time": 30.0
+              "_type": "Basic FMS Info",
+              "_source0": "network_table:///FMSInfo",
+              "_title": "FMSInfo"
+            }
+          },
+          "6,0": {
+            "size": [
+              2,
+              3
+            ],
+            "content": {
+              "_type": "Powerup Field",
+              "_source0": "network_table:///FMSInfo",
+              "_title": "FMSInfo"
             }
           }
         }
