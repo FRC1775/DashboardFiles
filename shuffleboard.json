@@ -1,5 +1,5 @@
 {
-  "dividerPosition": 0.12705436156763592,
+  "dividerPosition": 0.15423514538558786,
   "tabPane": [
     {
       "title": "Competition Dashboard",
@@ -11,20 +11,9 @@
         "hgap": 16.0,
         "vgap": 16.0,
         "tiles": {
-          "4,1": {
+          "0,2": {
             "size": [
-              2,
-              1
-            ],
-            "content": {
-              "_type": "ComboBox Chooser",
-              "_source0": "network_table:///SmartDashboard/Auto mode",
-              "_title": "Auto Mode"
-            }
-          },
-          "2,1": {
-            "size": [
-              2,
+              3,
               1
             ],
             "content": {
@@ -33,9 +22,9 @@
               "_title": "Robot Starting Position"
             }
           },
-          "2,0": {
+          "0,0": {
             "size": [
-              4,
+              3,
               1
             ],
             "content": {
@@ -44,15 +33,49 @@
               "_title": "FMSInfo"
             }
           },
-          "6,0": {
+          "0,1": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "ComboBox Chooser",
+              "_source0": "network_table:///SmartDashboard/Auto mode",
+              "_title": "/SmartDashboard/Auto mode"
+            }
+          },
+          "3,0": {
+            "size": [
+              6,
+              4
+            ],
+            "content": {
+              "_type": "Camera Stream",
+              "_source0": "camera_server://USB Camera 0",
+              "_title": "USB Camera 0"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Home Dashboard",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {
+          "0,0": {
             "size": [
               2,
               3
             ],
             "content": {
               "_type": "Powerup Field",
-              "_source0": "network_table:///FMSInfo",
-              "_title": "FMSInfo"
+              "_title": ""
             }
           }
         }
