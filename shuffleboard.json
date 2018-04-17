@@ -44,9 +44,20 @@
               "_title": "/SmartDashboard/Auto mode"
             }
           },
+          "0,3": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "ComboBox Chooser",
+              "_source0": "network_table:///SmartDashboard/Prioritize",
+              "_title": "SmartDashboard/Prioritize"
+            }
+          },
           "3,0": {
             "size": [
-              6,
+              5,
               4
             ],
             "content": {
